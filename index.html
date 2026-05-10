@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maltinho — Avifauna Kartierung</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Libre+Baskerville:ital@0;1&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Grain overlay -->
+  <div class="grain"></div>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-logo">M.</div>
+    <ul class="nav-links">
+      <li><a href="#about">Über mich</a></li>
+      <li><a href="#leistungen">Leistungen</a></li>
+      <li><a href="#methodik">Methodik</a></li>
+      <li><a href="#kontakt" class="nav-cta">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="circle c1"></div>
+      <div class="circle c2"></div>
+      <div class="circle c3"></div>
+    </div>
+    <div class="hero-content">
+      <span class="hero-eyebrow">Avifauna · Kartierung · Naturschutz</span>
+      <h1>Vögel zählen.<br><em>Natur schützen.</em></h1>
+      <p class="hero-sub">Professionelle avifaunistische Erfassungen nach aktuellen Methoden — für Umweltgutachten, Bebauungsplanung und Schutzgebietsmanagement.</p>
+      <div class="hero-actions">
+        <a href="#kontakt" class="btn-primary">Projekt anfragen</a>
+        <a href="#leistungen" class="btn-ghost">Leistungen ansehen</a>
+      </div>
+    </div>
+    <div class="hero-illustration">
+      <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" class="bird-svg">
+        <!-- Branch -->
+        <path d="M50 320 Q150 280 250 300 Q320 315 380 290" stroke="#5c4a2a" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <path d="M180 300 Q190 270 210 255" stroke="#5c4a2a" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <path d="M240 302 Q248 275 255 260" stroke="#5c4a2a" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <!-- Bird body -->
+        <ellipse cx="200" cy="180" rx="45" ry="28" fill="#2d4a1e" transform="rotate(-15, 200, 180)"/>
+        <!-- Head -->
+        <circle cx="235" cy="160" r="20" fill="#2d4a1e"/>
+        <!-- Eye -->
+        <circle cx="241" cy="156" r="4" fill="#fff"/>
+        <circle cx="242" cy="156" r="2.5" fill="#1a1a1a"/>
+        <circle cx="243" cy="155" r="1" fill="#fff"/>
+        <!-- Beak -->
+        <path d="M252 159 L265 157 L252 163 Z" fill="#8b7355"/>
+        <!-- Wing -->
+        <path d="M195 175 Q170 195 155 220 Q175 210 200 200 Q215 193 220 182 Z" fill="#3a5c28"/>
+        <path d="M195 175 Q180 185 165 195 Q180 192 195 185 Z" fill="#4a7033" opacity="0.7"/>
+        <!-- Tail -->
+        <path d="M158 188 Q135 195 120 210 Q140 200 162 195 Z" fill="#2d4a1e"/>
+        <path d="M158 192 Q130 205 115 225 Q138 210 162 200 Z" fill="#243d18"/>
+        <!-- Breast -->
+        <ellipse cx="215" cy="190" rx="18" ry="12" fill="#c17f24" opacity="0.85" transform="rotate(-15, 215, 190)"/>
+        <!-- Feet -->
+        <line x1="205" y1="205" x2="200" y2="225" stroke="#5c4a2a" stroke-width="1.5"/>
+        <line x1="200" y1="225" x2="192" y2="232" stroke="#5c4a2a" stroke-width="1.5"/>
+        <line x1="200" y1="225" x2="200" y2="234" stroke="#5c4a2a" stroke-width="1.5"/>
+        <line x1="200" y1="225" x2="208" y2="232" stroke="#5c4a2a" stroke-width="1.5"/>
+        <line x1="215" y1="208" x2="212" y2="228" stroke="#5c4a2a" stroke-width="1.5"/>
+        <line x1="212" y1="228" x2="204" y2="235" stroke="#5c4a2a" stroke-width="1.5"/>
+        <line x1="212" y1="228" x2="213" y2="237" stroke="#5c4a2a" stroke-width="1.5"/>
+        <line x1="212" y1="228" x2="220" y2="234" stroke="#5c4a2a" stroke-width="1.5"/>
+        <!-- Small decorative birds in background -->
+        <path d="M60 80 Q65 75 70 80" stroke="#2d4a1e" stroke-width="1.5" fill="none" opacity="0.4"/>
+        <path d="M65 77 Q65 72 67 77" stroke="#2d4a1e" stroke-width="1" fill="none" opacity="0.4"/>
+        <path d="M320 60 Q326 54 332 60" stroke="#2d4a1e" stroke-width="1.5" fill="none" opacity="0.3"/>
+        <path d="M326 57 Q326 51 328 57" stroke="#2d4a1e" stroke-width="1" fill="none" opacity="0.3"/>
+        <path d="M100 120 Q107 113 114 120" stroke="#2d4a1e" stroke-width="1.5" fill="none" opacity="0.25"/>
+      </svg>
+    </div>
+    <div class="scroll-hint">↓</div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <span class="section-label">Über mich</span>
+          <h2>Feldornithologe<br>mit Leidenschaft</h2>
+          <p>Ich führe avifaunistische Kartierungen für Planungsbüros, Naturschutzbehörden und private Auftraggeber durch. Meine Arbeit verbindet wissenschaftliche Methodik mit jahrelanger Geländeerfahrung.</p>
+          <p>Besondere Kenntnisse besitze ich in der Erfassung von Brutvögeln, der Durchzugskartierung sowie der artenschutzrechtlichen Prüfung nach §44 BNatSchG.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">§44</span>
+              <span class="stat-label">BNatSchG</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">BV</span>
+              <span class="stat-label">Brutvogelkartierung</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">SPA</span>
+              <span class="stat-label">Vogelschutzgebiete</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="field-notes">
+            <div class="note-header">
+              <span class="dm-mono">Geländeprotokoll</span>
+              <span class="dm-mono note-date">09.05.2026 · 05:34 Uhr</span>
+            </div>
+            <div class="note-entry">
+              <span class="species-code">KOH</span>
+              <span class="species-name">Kohlmeise</span>
+              <span class="species-detail">Revier, singend</span>
+            </div>
+            <div class="note-entry">
+              <span class="species-code">AME</span>
+              <span class="species-name">Amsel</span>
+              <span class="species-detail">♂ Balz, 2 Ind.</span>
+            </div>
+            <div class="note-entry highlight">
+              <span class="species-code">ROT</span>
+              <span class="species-name">Rotmilan</span>
+              <span class="species-detail">überfliegend NW</span>
+            </div>
+            <div class="note-entry">
+              <span class="species-code">BAU</span>
+              <span class="species-name">Baumpieper</span>
+              <span class="species-detail">Singflug, Revier</span>
+            </div>
+            <div class="note-entry">
+              <span class="species-code">WEN</span>
+              <span class="species-name">Wendehals</span>
+              <span class="species-detail">rufend, Höhle?</span>
+            </div>
+            <div class="note-footer dm-mono">5 Arten · Punkt B3 · Transekt 2</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leistungen -->
+  <section class="leistungen" id="leistungen">
+    <div class="container">
+      <span class="section-label">Was ich anbiete</span>
+      <h2>Leistungen</h2>
+      <div class="leistungen-grid">
+        <div class="leistung-card">
+          <div class="leistung-icon">⊕</div>
+          <h3>Brutvogelkartierung</h3>
+          <p>Systematische Erfassung des Brutbestands nach Methodenstandard (Revierkartierung, Punkt-Stopp-Zählung). Geeignet für UVP, FFH-Verträglichkeitsprüfung und Managementpläne.</p>
+        </div>
+        <div class="leistung-card">
+          <div class="leistung-icon">◎</div>
+          <h3>Artenschutzrechtliche Prüfung</h3>
+          <p>Besatzkontrolle und Potenzialabschätzung für Gehölzfällungen, Abbruch von Gebäuden und Eingriffe in den Siedlungsbereich. Prüfung nach §44 BNatSchG.</p>
+        </div>
+        <div class="leistung-card">
+          <div class="leistung-icon">◈</div>
+          <h3>Raumnutzungsanalyse</h3>
+          <p>Erfassung von Greifvögeln und Großvögeln (Milan, Weißstorch, Schwarzstorch) im Umfeld von WEA-Standorten. Transekte und Horst-Monitoring.</p>
+        </div>
+        <div class="leistung-card">
+          <div class="leistung-icon">◇</div>
+          <h3>Gutachterliche Stellungnahmen</h3>
+          <p>Fachgutachten und Stellungnahmen für Behörden, Planungsbüros und Rechtsverfahren. GIS-gestützte Auswertung und kartografische Aufbereitung.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Methodik -->
+  <section class="methodik" id="methodik">
+    <div class="container">
+      <span class="section-label">Wie ich arbeite</span>
+      <h2>Methodik</h2>
+      <div class="methodik-list">
+        <div class="methodik-item">
+          <span class="methodik-num dm-mono">01</span>
+          <div>
+            <h4>Geländebegehung in der Dämmerung</h4>
+            <p>Erfassungen beginnen in der Regel 30 Minuten vor Sonnenaufgang — wenn Reviervögel am aktivsten sind und die Artenidentifikation über den Gesang am sichersten gelingt.</p>
+          </div>
+        </div>
+        <div class="methodik-item">
+          <span class="methodik-num dm-mono">02</span>
+          <div>
+            <h4>Standardisierte Protokollierung</h4>
+            <p>Alle Beobachtungen werden nach dem Methodenstandard des DDA erfasst. Verhaltensmerkmale (B1–B3) werden dokumentiert, GPS-Koordinaten für jede Beobachtung gespeichert.</p>
+          </div>
+        </div>
+        <div class="methodik-item">
+          <span class="methodik-num dm-mono">03</span>
+          <div>
+            <h4>GIS-gestützte Auswertung</h4>
+            <p>Kartografische Aufbereitung der Daten mit QGIS. Reviermittelpunkte, Raumnutzungskarten und Habitatanalysen als Grundlage für das Gutachten.</p>
+          </div>
+        </div>
+        <div class="methodik-item">
+          <span class="methodik-num dm-mono">04</span>
+          <div>
+            <h4>Berichterstattung & Dokumentation</h4>
+            <p>Gutachten entsprechen den Anforderungen der zuständigen Behörden. Arttabellen, Nachweiskarten und Bewertung der Eingriffswirkung werden klar strukturiert aufbereitet.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section class="kontakt" id="kontakt">
+    <div class="container">
+      <div class="kontakt-inner">
+        <span class="section-label">Projekt anfragen</span>
+        <h2>Kontakt aufnehmen</h2>
+        <p class="kontakt-sub">Für Anfragen zu Kartierungsaufträgen, Gutachten oder Kooperationen stehe ich gerne zur Verfügung.</p>
+        <div class="kontakt-options">
+          <a href="mailto:ihre@email.de" class="kontakt-card">
+            <span class="kontakt-icon">✉</span>
+            <span class="kontakt-label">E-Mail</span>
+            <span class="kontakt-value">ihre@email.de</span>
+          </a>
+          <a href="https://ornitho.de" target="_blank" class="kontakt-card">
+            <span class="kontakt-icon">◎</span>
+            <span class="kontakt-label">Ornitho.de</span>
+            <span class="kontakt-value">Beobachtungsarchiv</span>
+          </a>
+        </div>
+        <p class="kontakt-note dm-mono">Antwort in der Regel innerhalb von 48 Stunden · Einsatzgebiet: Deutschland</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <span>© 2026 Maltinho · Avifauna Kartierung</span>
+      <span class="dm-mono footer-note">Alle Rechte vorbehalten</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
