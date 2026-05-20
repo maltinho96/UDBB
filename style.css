@@ -414,6 +414,11 @@ nav {
   padding: 2rem 0;
   border-bottom: 1px solid rgba(255,255,255,0.08);
   align-items: start;
+  min-width: 0;
+}
+
+.methodik-item > div {
+  min-width: 0;
 }
 
 .methodik-item:last-child { border-bottom: none; }
