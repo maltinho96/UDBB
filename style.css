@@ -537,3 +537,22 @@ footer span {
   .methodik-num { padding-top: 0; }
   .about-stats { flex-wrap: wrap; }
 }
+
+/* ===== Impressum ===== */
+.impressum {
+  padding: 5rem 0;
+  background: var(--cream);
+  border-top: 1px solid rgba(90,74,42,0.1);
+}
+
+.impressum-inner { max-width: 600px; }
+.impressum h2 { margin-bottom: 2.5rem; }
+
+.impressum-block {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px dashed rgba(90,74,42,0.15);
+}
+.impressum-block:last-child { border-bottom: none; }
+.impressum-block h4 { margin-bottom: 0.5rem; }
+.impressum-block p { font-size: 0.92rem; line-height: 1.9; }
