@@ -561,3 +561,45 @@ footer span {
 .impressum-block:last-child { border-bottom: none; }
 .impressum-block h4 { margin-bottom: 0.5rem; }
 .impressum-block p { font-size: 0.92rem; line-height: 1.9; }
+
+/* ===== Methodik Tabs ===== */
+.methodik-tabs {
+  display: flex;
+  gap: 0;
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+  flex-wrap: wrap;
+}
+
+.methodik-tab {
+  background: none;
+  border: none;
+  color: rgba(245,240,232,0.45);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.85rem 1.5rem;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  transition: color 0.2s, border-color 0.2s;
+  white-space: nowrap;
+}
+
+.methodik-tab:hover {
+  color: rgba(245,240,232,0.75);
+}
+
+.methodik-tab.active {
+  color: var(--straw);
+  border-bottom-color: var(--straw);
+}
+
+.methodik-panel {
+  display: none;
+}
+
+.methodik-panel.active {
+  display: block;
+}

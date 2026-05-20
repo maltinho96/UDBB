@@ -14,7 +14,7 @@
 
   <!-- Navigation -->
   <nav>
-    <div class="nav-logo">Umweltdienste Babelsberg</div>
+    <div class="nav-logo">M.</div>
     <ul class="nav-links">
       <li><a href="#about">Über mich</a></li>
       <li><a href="#leistungen">Leistungen</a></li>
@@ -154,13 +154,23 @@
       <div class="leistungen-grid">
         <div class="leistung-card">
           <div class="leistung-icon">⊕</div>
-          <h3>Brutvogelkartierung</h3>
-          <p>Standardisierte Erfassung nach wissenschaftlichem Methodenstandard (Südbeck et al. 2005). Protokollierung von Brutvögeln, GPS-Verortung aller Beobachtungen, geeignet als Zuarbeit für landschaftsplanerische Fachbeiträge.</p>
+          <h3>Linienkartierung Brutvögel</h3>
+          <p>Standardisierte Erfassung nach DDA-Methodenstandard. Protokollierung von Revierverhalten (B1–B3), GPS-Verortung aller Beobachtungen, geeignet als Zuarbeit für UVP-Verfahren.</p>
+        </div>
+        <div class="leistung-card">
+          <div class="leistung-icon">◎</div>
+          <h3>Geländebegehung & Protokoll</h3>
+          <p>Frühmorgendliche Erfassungsgänge in der Hauptaktivitätsphase. Sorgfältige Dokumentation nach Vorgabe des Auftraggebers, Übergabe der Rohdaten in abgestimmtem Format.</p>
         </div>
         <div class="leistung-card">
           <div class="leistung-icon">◈</div>
           <h3>GIS-Auswertung</h3>
           <p>Aufbereitung der Kartierungsdaten mit QGIS: Reviermittelpunkte, einfache Verbreitungskarten, Export in gängige Formate (Shapefile, GeoPackage, PDF).</p>
+        </div>
+        <div class="leistung-card">
+          <div class="leistung-icon">◇</div>
+          <h3>Zuarbeit für Planungsbüros</h3>
+          <p>Übernahme von Geländearbeit als Subunternehmer oder freier Mitarbeiter. Zuverlässige Durchführung nach Methodenvorgabe, Abstimmung mit dem verantwortlichen Gutachter.</p>
         </div>
       </div>
     </div>
@@ -171,50 +181,165 @@
     <div class="container">
       <span class="section-label">Wie ich arbeite</span>
       <h2>Methodik</h2>
-      <div class="methodik-list">
-        <div class="methodik-item">
-          <span class="methodik-num dm-mono">01</span>
-          <div>
-            <h4>Kartierung nach Südbeck</h4>
-            <p>Erfassung nach den behördlich anerkannten Methodenstandards (Südbeck et al. 2005) als rechtssichere Grundlage für Planungsverfahren.</p>
+
+      <!-- Tab navigation -->
+      <div class="methodik-tabs">
+        <button class="methodik-tab active" data-tab="brutvogel">Brutvogelkartierung</button>
+        <button class="methodik-tab" data-tab="horst">Horsterfassung</button>
+        <button class="methodik-tab" data-tab="amphibien">Amphibien & Reptilien</button>
+        <button class="methodik-tab" data-tab="baumhoehlen">Baumhöhlen</button>
+      </div>
+
+      <!-- Brutvögel -->
+      <div class="methodik-panel active" data-panel="brutvogel">
+        <div class="methodik-list">
+          <div class="methodik-item">
+            <span class="methodik-num dm-mono">01</span>
+            <div>
+              <h4>Kartierung nach Südbeck</h4>
+              <p>Erfassung nach den behördlich anerkannten Methodenstandards (Südbeck et al. 2005) als rechtssichere Grundlage für Planungsverfahren.</p>
+            </div>
           </div>
-        </div>
-        <div class="methodik-item">
-          <span class="methodik-num dm-mono">02</span>
-          <div>
-            <h4>Früh- & Spätbegehungen</h4>
-            <p>Frühbegehungen in den aktivsten Morgenstunden ab Sonnenaufgang; Spätbegehungen fangen dämmerungs- und nachtaktive Arten am Abend ab.</p>
+          <div class="methodik-item">
+            <span class="methodik-num dm-mono">02</span>
+            <div>
+              <h4>Früh- & Spätbegehungen</h4>
+              <p>Frühbegehungen in den aktivsten Morgenstunden ab Sonnenaufgang; Spätbegehungen fangen dämmerungs- und nachtaktive Arten am Abend ab.</p>
+            </div>
           </div>
-        </div>
-        <div class="methodik-item">
-          <span class="methodik-num dm-mono">03</span>
-          <div>
-            <h4>Saisonal verteilte Erfassungen</h4>
-            <p>Begehungen werden über die Brutsaison (März bis Juli) verteilt — frühe Standvögel im Frühjahr, späte Zugvögel im Sommer werden so lückenlos erfasst.</p>
+          <div class="methodik-item">
+            <span class="methodik-num dm-mono">03</span>
+            <div>
+              <h4>Saisonal verteilte Erfassungen</h4>
+              <p>Begehungen werden über die Brutsaison (März bis Juli) verteilt — frühe Standvögel im Frühjahr, späte Zugvögel im Sommer werden so lückenlos erfasst.</p>
+            </div>
           </div>
-        </div>
-        <div class="methodik-item">
-          <span class="methodik-num dm-mono">04</span>
-          <div>
-            <h4>Digitale Protokollierung mit QField</h4>
-            <p>GPS-gestützte Aufnahme direkt im Gelände. Brutvögel werden mit den offiziellen Brutzeitcodes dokumentiert, weitere Gruppen nach ihren spezifischen Vorgaben.</p>
+          <div class="methodik-item">
+            <span class="methodik-num dm-mono">04</span>
+            <div>
+              <h4>Digitale Protokollierung mit QField</h4>
+              <p>GPS-gestützte Aufnahme direkt im Gelände. Brutvögel werden mit den offiziellen Brutzeitcodes dokumentiert, weitere Artengruppen nach ihren spezifischen Vorgaben.</p>
+            </div>
           </div>
-        </div>
-        <div class="methodik-item">
-          <span class="methodik-num dm-mono">05</span>
-          <div>
-            <h4>GIS-Auswertung mit QGIS</h4>
-            <p>Aufbereitung der Rohdaten zu Reviermittelpunkten, Raumnutzungskarten und Habitatanalysen — als direkt verwendbare GIS-Layer (Shapefile, GeoPackage).</p>
+          <div class="methodik-item">
+            <span class="methodik-num dm-mono">05</span>
+            <div>
+              <h4>GIS-Auswertung mit QGIS</h4>
+              <p>Aufbereitung der Rohdaten zu Reviermittelpunkten, Raumnutzungskarten und Habitatanalysen — als direkt verwendbare GIS-Layer (Shapefile, GeoPackage).</p>
+            </div>
           </div>
-        </div>
-        <div class="methodik-item">
-          <span class="methodik-num dm-mono">06</span>
-          <div>
-            <h4>Dokumentation & Fachdaten-Lieferung</h4>
-            <p>Klar strukturierte Arttabellen, digitale Nachweiskarten und fachliche Zuarbeit für den Artenschutzrechtlichen Fachbeitrag (ASP) — ohne unnötigen Overhead.</p>
+          <div class="methodik-item">
+            <span class="methodik-num dm-mono">06</span>
+            <div>
+              <h4>Dokumentation & Fachdaten-Lieferung</h4>
+              <p>Klar strukturierte Arttabellen, digitale Nachweiskarten und fachliche Zuarbeit für den Artenschutzrechtlichen Fachbeitrag (ASP) — ohne unnötigen Overhead.</p>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- Horsterfassung -->
+      <div class="methodik-panel" data-panel="horst">
+        <div class="methodik-list">
+          <div class="methodik-item">
+            <span class="methodik-num dm-mono">01</span>
+            <div>
+              <h4>Gezielte Horstsuche</h4>
+              <p>Begehungen in der laubfreien Zeit (Februar/März) zur Identifikation von Horsten großer Greif- und Schreitvögel: Rotmilan, Schwarzmilan, Mäusebussard, Weißstorch.</p>
+            </div>
+          </div>
+          <div class="methodik-item">
+            <span class="methodik-num dm-mono">02</span>
+            <div>
+              <h4>Besatzkontrolle</h4>
+              <p>Überprüfung bekannter und neu gefundener Horste auf Besatz während der Brutzeit. Dokumentation von Anwesenheit, Balzverhalten und Nestmaterial.</p>
+            </div>
+          </div>
+          <div class="methodik-item">
+            <span class="methodik-num dm-mono">03</span>
+            <div>
+              <h4>GPS-Verortung & Kartierung</h4>
+              <p>Exakte Einmessung aller Horste per GPS, Aufnahme von Baumart, Höhe und Exposition. Übergabe als GIS-Layer mit Schutzradien nach §44 BNatSchG.</p>
+            </div>
+          </div>
+          <div class="methodik-item">
+            <span class="methodik-num dm-mono">04</span>
+            <div>
+              <h4>Fotodokumentation</h4>
+              <p>Bilddokumentation zur Nachvollziehbarkeit und als Beleg für Behörden. Georeferenzierte Fotos, sofern der Standort eine Aufnahme erlaubt.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Amphibien & Reptilien -->
+      <div class="methodik-panel" data-panel="amphibien">
+        <div class="methodik-list">
+          <div class="methodik-item">
+            <span class="methodik-num dm-mono">01</span>
+            <div>
+              <h4>Keschern & Sichtbeobachtung</h4>
+              <p>Erfassung laichender Amphibien an Gewässern durch Keschern und Sichtbeobachtung. Schwerpunkt auf Kammmolch, Knoblauchkröte und weiteren planungsrelevanten Arten.</p>
+            </div>
+          </div>
+          <div class="methodik-item">
+            <span class="methodik-num dm-mono">02</span>
+            <div>
+              <h4>Reusenfallen (E1-Reusen)</h4>
+              <p>Einsatz von Reusenfallen für einen Begehungsnachweis von Molchen. Fallen werden abends gesetzt und morgens geleert — Tiere werden bestimmt, gezählt und sofort freigelassen.</p>
+            </div>
+          </div>
+          <div class="methodik-item">
+            <span class="methodik-num dm-mono">03</span>
+            <div>
+              <h4>Reptilienbretter & Versteckstrukturen</h4>
+              <p>Auslage von Kunstverstecken (Wellpappe, Bitumenplatten) zur Reptilienerfassung. Kontrolle bei geeigneten Temperaturbedingungen auf Zauneidechse, Ringelnatter u.a.</p>
+            </div>
+          </div>
+          <div class="methodik-item">
+            <span class="methodik-num dm-mono">04</span>
+            <div>
+              <h4>Nachtbegehungen</h4>
+              <p>Rufnachweise von Laubfrosch und Unken sowie Sichtbeobachtung wandernder Amphibien an geeigneten Laichgewässern bei Temperaturen über 8°C.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Baumhöhlen -->
+      <div class="methodik-panel" data-panel="baumhoehlen">
+        <div class="methodik-list">
+          <div class="methodik-item">
+            <span class="methodik-num dm-mono">01</span>
+            <div>
+              <h4>Visuelle Höhlenkartierung</h4>
+              <p>Begehung des Bestands mit Fernglas und ggf. Teleskopstange zur Identifikation von Höhlen, Spalten und Rindentaschen mit Quartierpotenzial für Vögel und Fledermäuse.</p>
+            </div>
+          </div>
+          <div class="methodik-item">
+            <span class="methodik-num dm-mono">02</span>
+            <div>
+              <h4>Klassifizierung nach Habitatbaumtyp</h4>
+              <p>Einordnung der Strukturen nach Höhlentyp (Specht-, Faulhöhle, Spalte, Astausbruch) und Eignung als Brut- oder Tagesversteck. Dokumentation von Baum-ID, Höhe und Exposition.</p>
+            </div>
+          </div>
+          <div class="methodik-item">
+            <span class="methodik-num dm-mono">03</span>
+            <div>
+              <h4>Besatzkontrolle im Rahmen von §44</h4>
+              <p>Überprüfung auf aktuellen Besatz vor Fällmaßnahmen. Endoskopkontrolle bei erreichbaren Höhlen, Beobachtung auf Ein- und Ausflug bei unzugänglichen Strukturen.</p>
+            </div>
+          </div>
+          <div class="methodik-item">
+            <span class="methodik-num dm-mono">04</span>
+            <div>
+              <h4>GIS-Erfassung & Fällprotokoll-Zuarbeit</h4>
+              <p>GPS-Einmessung aller kartierten Strukturen, Übergabe als GIS-Layer. Zuarbeit für baumindividuelle Fällprotokolle und CEF-Maßnahmenplanung.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -226,10 +351,15 @@
         <h2>Kontakt aufnehmen</h2>
         <p class="kontakt-sub">Für Anfragen zu Linienkartierungen oder Geländearbeit als Subunternehmer stehe ich gerne zur Verfügung.</p>
         <div class="kontakt-options">
-          <a href="mailto: umweltdienste.babelsberg@posteo.de " class="kontakt-card">
+          <a href="mailto:ihre@email.de" class="kontakt-card">
             <span class="kontakt-icon">✉</span>
             <span class="kontakt-label">E-Mail</span>
-            <span class="kontakt-value"> umweltdienste.babelsberg@posteo.de</span>
+            <span class="kontakt-value">ihre@email.de</span>
+          </a>
+          <a href="https://ornitho.de" target="_blank" class="kontakt-card">
+            <span class="kontakt-icon">◎</span>
+            <span class="kontakt-label">Ornitho.de</span>
+            <span class="kontakt-value">Beobachtungsarchiv</span>
           </a>
         </div>
         <p class="kontakt-note dm-mono">Antwort in der Regel innerhalb von 48 Stunden · Einsatzgebiet: Deutschland</p>

@@ -30,3 +30,14 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+
+// Methodik tabs
+document.querySelectorAll('.methodik-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    const target = tab.dataset.tab;
+    document.querySelectorAll('.methodik-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.methodik-panel').forEach(p => p.classList.remove('active'));
+    tab.classList.add('active');
+    document.querySelector(`.methodik-panel[data-panel="${target}"]`).classList.add('active');
+  });
+});
