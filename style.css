@@ -619,3 +619,17 @@ footer span {
   border-radius: 4px;
   box-shadow: 0 8px 32px rgba(30,58,18,0.12);
 }
+
+.about-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 8px 32px rgba(30,58,18,0.12);
+}
