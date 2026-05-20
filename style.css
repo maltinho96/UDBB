@@ -382,6 +382,10 @@ nav {
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
+.leistung-card--wide {
+  grid-column: 1 / -1;
+}
+
 .leistung-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 12px 32px rgba(30,58,18,0.1);
