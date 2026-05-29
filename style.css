@@ -546,8 +546,8 @@ footer span {
   .nav-logo { font-size: 1.2rem; line-height: 1.25; }
   .nav-links li:not(:last-child) { display: none; }
 
-  /* Hero: ausreichend Abstand unter kompakterer Nav */
-  .hero { padding: 6.5rem 1.25rem 3rem; }
+  /* Hero: ausreichend Abstand unter kompakterer Nav (Logo zweizeilig ~80px) */
+  .hero { padding: 7.5rem 1.25rem 3rem; }
   .hero h1 { font-size: 2.4rem; }
   .hero-sub { font-size: 0.97rem; }
 
