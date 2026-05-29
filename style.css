@@ -46,11 +46,11 @@ body {
 
 /* ===== Typography ===== */
 h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.15; color: var(--forest); }
-h1 { font-size: clamp(2.8rem, 6vw, 5rem); font-weight: 600; }
-h2 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 400; }
-h3 { font-size: 1.25rem; font-weight: 600; margin-bottom: 0.75rem; }
-h4 { font-size: 1.05rem; font-weight: 600; margin-bottom: 0.5rem; }
-p { color: var(--ink-soft); font-size: 1rem; line-height: 1.8; }
+h1 { font-size: clamp(2.8rem, 6vw, 5.2rem); font-weight: 600; }
+h2 { font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 400; }
+h3 { font-size: 1.35rem; font-weight: 600; margin-bottom: 0.75rem; }
+h4 { font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem; }
+p { color: var(--ink-soft); font-size: 1.05rem; line-height: 1.8; }
 em { font-style: italic; color: var(--moss); }
 
 .dm-mono { font-family: var(--font-mono); }
@@ -124,7 +124,7 @@ nav {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 8rem 3rem 4rem;
+  padding: 9rem 3rem 4rem;
   position: relative;
   overflow: hidden;
 }
@@ -140,6 +140,7 @@ nav {
   border-radius: 50%;
   filter: blur(80px);
   opacity: 0.18;
+  z-index: 0;
 }
 .c1 { width: 600px; height: 600px; background: var(--moss); top: -200px; right: -100px; }
 .c2 { width: 400px; height: 400px; background: var(--straw); bottom: -100px; left: 100px; animation: drift 12s ease-in-out infinite alternate; }
