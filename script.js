@@ -39,5 +39,21 @@ document.querySelectorAll('.methodik-tab').forEach(tab => {
     document.querySelectorAll('.methodik-panel').forEach(p => p.classList.remove('active'));
     tab.classList.add('active');
     document.querySelector(`.methodik-panel[data-panel="${target}"]`).classList.add('active');
+    // Sync select
+    const sel = document.getElementById('methodik-select');
+    if (sel) sel.value = target;
   });
 });
+
+// Methodik select (Tablet)
+const methodikSelect = document.getElementById('methodik-select');
+if (methodikSelect) {
+  methodikSelect.addEventListener('change', () => {
+    const target = methodikSelect.value;
+    document.querySelectorAll('.methodik-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.methodik-panel').forEach(p => p.classList.remove('active'));
+    const matchingTab = document.querySelector(`.methodik-tab[data-tab="${target}"]`);
+    if (matchingTab) matchingTab.classList.add('active');
+    document.querySelector(`.methodik-panel[data-panel="${target}"]`).classList.add('active');
+  });
+}
